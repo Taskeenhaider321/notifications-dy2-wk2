@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" integrity="sha384-lZfu7Y8CcI+H6IMs+Kkvm6WLOsCCvsxjCC9C8YQ+UMeR8DYbzWUNjCqXxfrb+3R" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="output.css">
+  <title>Frontend Mentor | Notifications page</title>
+</head>
+<body class="bg-gray-100 dark:bg-[#E2E8F0]">
+
+  <main class="flex animation justify-center items-center"> 
+    <section class="w-[100%] h-[90%] md:w-[60%] md:h-[90%] md:p-20 bg-white dark:bg-[#08327A] rounded-2xl p-8 relative m-4">
+        <form id="notification-form">
+            <div class="notification-alarm flex flex-col md:flex-row items-center md:justify-between">
+              <div class="animation flex items-center">
+                <p class="text-2xl font-bold dark:text-white">Notifications</p>
+                <button id="notification" class="ml-2 px-3 py-1 text-white dark:bg-transparent dark:text-white  dark:border-2 bg-[#08327A] rounded-lg">7</button>
+              </div>
+              <div class="animation">
+                <div class="flex">
+                  <img class="moon cursor-pointer" src="./images/moon.svg"/>
+                  <img class="sun cursor-pointer ml-4" src="./images/sun.svg"/>
+                </div>
+                <button id="markread" class="mt-4 px-4 py-2 bg-[#08327A] dark:bg-transparent dark:text-white dark:border-2 text-white rounded-md"> Mark all as read </button>            
+              </div>
+            </div>      
+            <div class="notification-bar rounded-2xl bg-[#F6FAFD] mt-5 p-2" id="notification-bar"></div>
+        </form>   
+      </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+</html>
